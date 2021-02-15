@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+    commands:
+      - echo Installing app dependencies...
+      - yarn install
+  build:
+    commands:
+      - echo Building static site...
+      - npm run build
+
+artifacts:
+  type: zip
+  paths:
+    - './build/**/*'
+
+cache:
+  paths:
+    - './node_modules/**/*'
