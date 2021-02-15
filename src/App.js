@@ -136,7 +136,8 @@ function App() {
   return (
     <div className="App">
       <h1>just commited 10:57 15/02/2021  mertgolcu.tech</h1>
-      <h1>Add S^deploy script to yarn </h1>
+      <h1>Add S3 deploy script to yarn </h1>
+      <h1>Add S3 deploy script </h1>
      <Grid>
         <Palettes palettes={palettes} />
       </Grid>
